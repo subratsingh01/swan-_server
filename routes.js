@@ -12,6 +12,10 @@ router.patch('/login_update', (req, res) => {
     res.status(200).send(date.toLocaleString());
 });
 
+router.get('/', (req, res) => {
+    res.status(200).send("hi");
+})
+
 router.post('/status', (req, res) => {
     try {
         status.create({
